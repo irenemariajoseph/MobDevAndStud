@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuOrderProcess">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textAlignment="center"
+        app:srcCompat="@drawable/expedia_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="start|center_vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/back_button"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+
+                tools:ignore="RtlCompat" />
+
+            <TextView
+                android:id="@+id/txtShipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/poppins_bold"
+                android:textStyle="bold"
+                android:text="Fill The Package Information"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="62dp"
+                    android:layout_height="353dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="1dp"
+                    app:srcCompat="@drawable/progress_bar" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                   <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                       <TextView
+                           android:id="@+id/textView"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_margin="25dp"
+                           android:layout_weight="20"
+                           android:fontFamily="@font/nunito_bold"
+                           android:text="Pick Up Address*"
+                           android:textSize="20dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/button4"
+                                android:layout_width="200dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/round_background_dark"
+                                android:text="Pin Pick Up Location"
+                                android:textColor="@color/ijomuda" />
+                        </LinearLayout>
+                       <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="vertical">
+
+                           <TextView
+                               android:id="@+id/textView2"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_margin="25dp"
+                               android:layout_weight="20"
+                               android:fontFamily="@font/nunito_bold"
+                               android:text="Delivery Address*"
+                               android:textSize="20dp" />
+
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:orientation="vertical">
+
+                               <Button
+                                   android:id="@+id/button5"
+                                   android:layout_width="200dp"
+                                   android:layout_height="30dp"
+                                   android:layout_marginLeft="20dp"
+                                   android:layout_marginBottom="5dp"
+                                   android:background="@drawable/round_background_dark"
+                                   android:text="Pin Deliver Location"
+                                   android:textColor="@color/ijomuda" />
+                           </LinearLayout>
+                           <LinearLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical">
+
+                               <TextView
+                                   android:id="@+id/textView3"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="25dp"
+                                   android:layout_weight="20"
+                                   android:fontFamily="@font/nunito_bold"
+                                   android:text="Package Details*"
+                                   android:textSize="20dp" />
+
+                               <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="match_parent"
+                                   android:orientation="vertical">
+
+                                   <Button
+                                       android:id="@+id/btnPackageDetails"
+                                       android:layout_width="200dp"
+                                       android:layout_height="30dp"
+                                       android:layout_marginLeft="20dp"
+                                       android:layout_marginBottom="5dp"
+                                       android:background="@drawable/round_background_dark"
+                                       android:text="Package Details"
+                                       android:textColor="@color/ijomuda" />
+                               </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="278dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buatconfirm"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="30dp"
+
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/biru"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Informasi Pengiriman Lengkap"
+                android:textAlignment="center"
+                android:textColor="@color/putih" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

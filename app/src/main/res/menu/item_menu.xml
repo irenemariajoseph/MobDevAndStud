@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_pesan"
+        android:title="@string/pesan_tiket"
+        android:icon="@drawable/pemesanan_paket"/>
+
+
+
+    <item android:id="@+id/nav_tracking"
+        android:title="@string/tracking_paket"
+        android:icon="@drawable/track_paket"/>
+
+    <item android:id="@+id/nav_user"
+        android:title="@string/user_profile"
+        android:icon="@drawable/user_profile"/>
+
+</menu>

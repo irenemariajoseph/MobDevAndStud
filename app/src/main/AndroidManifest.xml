@@ -9,7 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Sign"></activity>
+        <activity android:name=".MenuUserSettings" />
+        <activity android:name=".MenuOrderPayment" />
+        <activity android:name=".MenuPackageDetails" />
+        <activity android:name=".MenuOrderConfirmOrder" />
+        <activity android:name=".MenuOrderProcess" />
+        <activity android:name=".MenuUser" />
+        <activity android:name=".MenuTracking" />
+        <activity android:name=".MenuAlamat" />
+        <activity android:name=".MenuOrderService" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".MainMenuActivity" />
+        <activity android:name=".Loader">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
