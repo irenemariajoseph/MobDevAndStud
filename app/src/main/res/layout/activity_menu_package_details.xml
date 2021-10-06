@@ -52,14 +52,14 @@
                 android:textSize="20dp"
                 tools:ignore="RtlCompat" />
         </LinearLayout>
-        //
 
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/dataBarang"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:orientation="vertical">
 
@@ -67,7 +67,8 @@
             android:id="@+id/textView54"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/item"
             android:fontFamily="@font/nunito_normal"
             android:text="Nama barang" />
 
@@ -96,7 +97,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/nunito_normal"
-                    android:text="Quantity" />
+                    android:text="Quantity"
+                    android:textColor="@color/item"/>
 
                 <EditText
                     android:id="@+id/edtQuantity"
@@ -119,6 +121,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/nunito_normal"
+                    android:textColor="@color/item"
                     android:text="Unit" />
 
                 <Spinner
@@ -141,7 +144,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/nunito_normal"
-                    android:text="Weight" />
+                    android:text="Weight"
+                    android:textColor="@color/item"/>
 
                 <EditText
                     android:id="@+id/edtWeight"
@@ -168,98 +172,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView57"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/nunito_normal"
-                    android:text="Width" />
-
-                <TextView
-                    android:id="@+id/textView58"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nunito_normal"
-                    android:text="per unit in meter"
-                    android:textSize="8sp" />
-
-                <EditText
-                    android:id="@+id/edtWidth"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:ems="10"
-                    android:inputType="numberDecimal" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView59"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/nunito_normal"
-                    android:text="Length" />
-
-                <TextView
-                    android:id="@+id/textView60"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nunito_normal"
-                    android:text="per unit in meter"
-                    android:textSize="8sp" />
-
-                <EditText
-                    android:id="@+id/edtLength"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:ems="10"
-                    android:inputType="numberDecimal" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView61"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/nunito_normal"
-                    android:text="Height" />
-
-                <TextView
-                    android:id="@+id/textView62"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nunito_normal"
-                    android:text="per unit in meter"
-                    android:textSize="8sp" />
-
-                <EditText
-                    android:id="@+id/edtHeight"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:ems="10"
-                    android:inputType="numberDecimal" />
-
-            </LinearLayout>
+                android:orientation="vertical" />
         </LinearLayout>
 
         <LinearLayout
@@ -295,10 +208,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Input Image"
+            android:text="Delivery Type "
             android:textColor="@color/biru"
             android:textSize="18sp"
             android:textStyle="bold" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -314,46 +228,35 @@
                 android:maxWidth="150dp"
                 android:maxHeight="150dp" />
 
-            <Button
-                android:id="@+id/uploadimage"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="Select Image"
-                android:textAllCaps="false" />
 
+            <Spinner
+                android:id="@+id/SpinnerPickUp"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+
+                android:background="@drawable/round_corner"
+                android:backgroundTint="@color/abu"
+                android:entries="@array/PengambilanPaket"
+                android:inputType="textPassword"
+                android:scrollbarSize="5dp"
+
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/nunito_light"
+                android:text=" Delivered To Post = Dikirim ke Pos Terdekat \n Pick up                   = Di ambil dari lokasi pengiriman"
+                android:textSize="7sp" />
 
         </LinearLayout>
 
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/Pengiriman"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/titlePengirimanBarang"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Tanggal Pengiriman"
-            android:textColor="@color/biru"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <EditText
-            android:id="@+id/edtTglPengiriman"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:clickable="true"
-            android:focusableInTouchMode="false" />
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/button"
@@ -377,30 +280,31 @@
             android:textColor="@color/colorNegative"
             android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/btnAddItem"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@drawable/round_corner"
-            android:backgroundTint="@android:color/white"
-            android:fontFamily="@font/nunito_bold"
-            android:text="+ More Item"
-            android:textAllCaps="false"
-            android:textColor="#e6aa15"
-            android:textSize="16sp" />
+<!--        <Button-->
+<!--            android:id="@+id/btnAddItem"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:layout_margin="5dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/round_corner"-->
+<!--            android:backgroundTint="@android:color/white"-->
+<!--            android:fontFamily="@font/nunito_bold"-->
+<!--            android:text="+ More Item"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textColor="#e6aa15"-->
+<!--            android:textSize="16sp" />-->
 
         <Button
             android:id="@+id/btnDone"
             android:layout_width="match_parent"
-            android:layout_height="45dp"
+            android:layout_height="43dp"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@drawable/round_corner"
-            android:backgroundTint="@color/ijotua"
+            android:backgroundTint="@color/biru"
             android:fontFamily="@font/nunito_bold"
             android:text="Done"
+            android:shadowColor="@color/abu"
             android:textAllCaps="false"
             android:textColor="@color/abu"
             android:textSize="16sp" />
@@ -411,14 +315,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:visibility="visible">
 
         <ProgressBar
             android:id="@+id/progressBar3"
             style="?android:attr/progressBarStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone" />
+            android:visibility="visible" />
     </LinearLayout>
 </LinearLayout>
 

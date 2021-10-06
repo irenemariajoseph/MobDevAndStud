@@ -36,6 +36,14 @@ public class MenuOrderProcess extends AppCompatActivity implements AdapterView.O
                 }
             });
 
+            Button buatconfirm =(Button)findViewById(R.id.buatconfirm);
+            buatconfirm.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(getApplicationContext(),MenuOrderConfirmOrder.class);
+                    startActivity(i);
+                }
+            });
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
 //        super.onCreate(savedInstanceState);

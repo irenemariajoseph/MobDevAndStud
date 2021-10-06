@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg2"
-    tools:context=".SignInActivity">
+    tools:context=".AdminLogin">
 
     <ImageView
         android:id="@+id/logoHori"
@@ -30,7 +30,7 @@
             android:layout_marginLeft="45dp"
             android:layout_marginTop="100dp"
             android:background="@drawable/round_corner"
-            android:hint="E-mail"
+            android:hint="Enter Admin E-mail"
             android:inputType="textEmailAddress"
             android:padding="10dp"
             android:textSize="15sp" />
@@ -42,7 +42,7 @@
             android:layout_marginLeft="45dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/round_corner"
-            android:hint="Password"
+            android:hint="Enter Admin Password"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="15sp" />
@@ -50,9 +50,9 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnSignInMenu"
+        android:id="@+id/btnSignInAdmin"
         android:layout_width="150dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
 
         android:layout_below="@+id/Lin1"
         android:layout_centerHorizontal="true"

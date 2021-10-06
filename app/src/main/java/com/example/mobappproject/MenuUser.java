@@ -5,6 +5,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,7 +16,9 @@ import android.widget.Button;
 
 public class MenuUser extends Fragment {
 
-    private Button btnlogout;
+    private Button  btnAdmin, btnlogout;
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -38,6 +42,18 @@ public class MenuUser extends Fragment {
             }
         });
 
-        return v;
 
+
+        //button admin
+        btnAdmin = v.findViewById(R.id.btnAdmin);
+        btnAdmin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), AdminLogin.class));
+
+                    }
+                });
+
+        return v;
     }}
+

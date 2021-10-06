@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="com_google_android_gms_fonts_certs" />
+
+    <string-array name="PengambilanPaket">
+        <item>Tipe ↕</item>
+        <item>Delivered to Post</item>
+        <item>Pick Up</item>
+    </string-array>
+
+    <string-array name="UpdateTracking" >
+    <item>Not Yet Process ↕</item>
+    <item>Pick Up</item>
+    <item>Delivered to Post</item>
+    <item>Warehouse Transit </item>
+    <item>Accepted By Courier </item>
+    <item>On Going Delivery </item>
+    <item>Package Arrived </item>
+    </string-array>
+
 </resources>
