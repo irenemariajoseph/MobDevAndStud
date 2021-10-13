@@ -27,25 +27,13 @@
 
 
         <EditText
-            android:id="@+id/name1"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="100dp"
-            android:background="@drawable/round_corner"
-            android:hint="Nama Depan"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textSize="15sp" />
-
-        <EditText
             android:id="@+id/editName1"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/round_corner"
-            android:hint="Nama Belakang"
+            android:hint="Nama Lengkap"
             android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="15sp" />
