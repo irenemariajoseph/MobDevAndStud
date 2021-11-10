@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 public class AdminLogin extends AppCompatActivity {
-
+//button admin lohin
     Button btnSignInAdmin;
 
     @Override
