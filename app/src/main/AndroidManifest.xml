@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mobappproject">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -9,6 +18,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MenuOrderPaymentDone"></activity>
+        <activity android:name=".MenuLogout" />
+        <activity android:name=".Logout" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD0PeGZrifZUeLrK3mUoZHYcjYdYK6XLpg" />
+
+        <activity android:name=".PickupLocationPengirim" />
+        <activity android:name=".MenuFormAddress" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".MenuPickUpLocation"
+            android:label="@string/title_activity_menu_pick_up_location" />
         <activity
             android:name=".AdminTrackingUpdate"
             android:exported="true" />
@@ -21,10 +51,15 @@
         <activity android:name=".MenuPackageDetails" />
         <activity android:name=".MenuOrderConfirmOrder" />
         <activity android:name=".MenuOrderProcess" />
-        <activity android:name=".MenuUser" />
-        <activity android:name=".MenuTracking" />
-        <activity android:name=".MenuAlamat" />
-        <activity android:name=".MenuOrderService" />
+        <activity
+            android:name=".MenuUser"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".MenuTracking"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".MenuOrderService"
+            tools:ignore="Instantiatable" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".SignUpActivity" />

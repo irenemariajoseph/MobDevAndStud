@@ -17,7 +17,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 
 public class MenuOrderProcess extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
-
+ Button btnBack;
 
 
         @Override
@@ -36,11 +36,28 @@ public class MenuOrderProcess extends AppCompatActivity implements AdapterView.O
                 }
             });
 
+            btnBack = findViewById(R.id.btnBack);
+            btnBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(MenuOrderProcess.this, MainMenuActivity.class));
+                }
+            });
+
             Button buatconfirm =(Button)findViewById(R.id.buatconfirm);
             buatconfirm.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent i = new Intent(getApplicationContext(),MenuOrderConfirmOrder.class);
+                    startActivity(i);
+                }
+            });
+
+            Button buatlocpengirim =(Button)findViewById(R.id.button4);
+            buatlocpengirim.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(getApplicationContext(),PickupLocationPengirim.class);
                     startActivity(i);
                 }
             });
