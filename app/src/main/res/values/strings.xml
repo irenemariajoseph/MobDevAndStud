@@ -15,5 +15,6 @@
         <item>User</item>
         <item>Admin</item>
     </string-array>
+    <string name="title_activity_menu_pick_up_location">Map</string>
 
 </resources>
