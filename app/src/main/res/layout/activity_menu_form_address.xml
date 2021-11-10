@@ -12,6 +12,7 @@
         android:layout_height="match_parent">
 
 
+<<<<<<< Updated upstream
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -197,6 +198,193 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:gravity="center" >
+=======
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                app:srcCompat="@drawable/expedia_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/back_button"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+
+                    tools:ignore="RtlCompat" />
+
+                <TextView
+                    android:id="@+id/txtShipment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Set Pickup Location"
+                    android:textAlignment="textStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    tools:ignore="RtlCompat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/namaPenerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan Nama Penerima"
+                    android:inputType="text"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="No. Handphone"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/noTelpPenerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan Nomor Handphone Penerima"
+                    android:inputType="number"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Alamat Lengkap"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/alamatLengkapPenerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan Alamat Lengkap Penerima"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Provinsi"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kota"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/kotaPenerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan Kota Penerima"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kode Pos"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/kodePosPenerima"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Masukkan Kode Pos Penerima"
+                    android:textSize="10sp" />
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:text="Latitude" />-->
+
+                <!--                    <EditText-->
+                <!--                        android:id="@+id/latitudePenerima"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:hint="Masukkan Latitude"-->
+                <!--                        android:inputType="number"-->
+                <!--                        android:textSize="10sp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:text="Longitude" />-->
+
+                <!--                    <EditText-->
+                <!--                        android:id="@+id/longitudePenerima"-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:hint="Masukkan Longitude"-->
+                <!--                        android:inputType="number"-->
+                <!--                        android:textSize="10sp" />-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Notes Tambahan"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Masukkan Notes Tambahan"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center" >
+>>>>>>> Stashed changes
 
                 <Button
                     android:id="@+id/btnFormDone"
@@ -206,10 +394,17 @@
                     android:textColor="#ffffff"
                     android:background="@drawable/round_background_dark"
                     android:text="Done" />
+<<<<<<< Updated upstream
                 </LinearLayout>
 
 
             </LinearLayout>
+=======
+            </LinearLayout>
+
+
+        </LinearLayout>
+>>>>>>> Stashed changes
     </ScrollView>
 
 

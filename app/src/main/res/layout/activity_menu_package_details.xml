@@ -247,6 +247,7 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+<<<<<<< Updated upstream
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -275,6 +276,47 @@
 
             </LinearLayout>
 
+=======
+>>>>>>> Stashed changes
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+<<<<<<< Updated upstream
+            <ImageView
+                android:id="@+id/previewimage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:maxWidth="150dp"
+                android:maxHeight="150dp" />
+
+=======
+            <Spinner
+                android:id="@+id/deliveryType"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/PengambilanPaket"
+                android:inputType="textPassword"
+                android:scrollbarSize="5dp"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/nunito_light"
+                android:text=" Delivered To Post = Dikirim ke Pos Terdekat \n Pick up                 = Di ambil dari lokasi pengiriman"
+                android:textSize="7sp" />
+>>>>>>> Stashed changes
+
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -293,8 +335,11 @@
         </LinearLayout>
 
 
+<<<<<<< Updated upstream
+=======
     </LinearLayout>
 
+>>>>>>> Stashed changes
     <LinearLayout
         android:id="@+id/button"
         android:layout_width="match_parent"
@@ -317,19 +362,19 @@
             android:textColor="@color/colorNegative"
             android:textSize="16sp" />
 
-<!--        <Button-->
-<!--            android:id="@+id/btnAddItem"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="45dp"-->
-<!--            android:layout_margin="5dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="@drawable/round_corner"-->
-<!--            android:backgroundTint="@android:color/white"-->
-<!--            android:fontFamily="@font/nunito_bold"-->
-<!--            android:text="+ More Item"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textColor="#e6aa15"-->
-<!--            android:textSize="16sp" />-->
+        <!--        <Button-->
+        <!--            android:id="@+id/btnAddItem"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/round_corner"-->
+        <!--            android:backgroundTint="@android:color/white"-->
+        <!--            android:fontFamily="@font/nunito_bold"-->
+        <!--            android:text="+ More Item"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textColor="#e6aa15"-->
+        <!--            android:textSize="16sp" />-->
 
         <Button
             android:id="@+id/btnDone"

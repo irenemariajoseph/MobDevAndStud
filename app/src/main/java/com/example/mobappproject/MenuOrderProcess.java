@@ -17,13 +17,26 @@ import android.widget.AdapterView;
 import android.widget.Button;
 
 public class MenuOrderProcess extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
+<<<<<<< Updated upstream
  Button btnBack;
 
+=======
+
+Button btnBack;
+>>>>>>> Stashed changes
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_menu_order_process);
+
+            btnBack = findViewById(R.id.btnBack);
+            btnBack.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(new Intent(MenuOrderProcess.this, MainMenuActivity.class));
+                }
+            });
 
 
 

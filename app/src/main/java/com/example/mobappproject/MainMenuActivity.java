@@ -13,6 +13,7 @@ public class MainMenuActivity extends AppCompatActivity {
 
     BottomNavigationView navigationView;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
