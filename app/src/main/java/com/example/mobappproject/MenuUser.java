@@ -19,6 +19,7 @@ public class MenuUser extends Fragment {
     private Button  btnAdmin, btnlogout;
 
 
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

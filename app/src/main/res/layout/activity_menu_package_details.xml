@@ -56,6 +56,7 @@
 
     </LinearLayout>
 
+
     <LinearLayout
         android:id="@+id/dataBarang"
         android:layout_width="match_parent"
@@ -68,9 +69,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:textColor="@color/item"
             android:fontFamily="@font/nunito_normal"
-            android:text="Nama barang" />
+            android:text="Nama barang"
+            android:textColor="@color/item" />
 
         <EditText
             android:id="@+id/edtNamaBarang"
@@ -98,7 +99,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/nunito_normal"
                     android:text="Quantity"
-                    android:textColor="@color/item"/>
+                    android:textColor="@color/item" />
 
                 <EditText
                     android:id="@+id/edtQuantity"
@@ -121,8 +122,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/nunito_normal"
-                    android:textColor="@color/item"
-                    android:text="Unit" />
+                    android:text="Unit"
+                    android:textColor="@color/item" />
 
                 <Spinner
                     android:id="@+id/spinUnit"
@@ -145,7 +146,7 @@
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/nunito_normal"
                     android:text="Weight"
-                    android:textColor="@color/item"/>
+                    android:textColor="@color/item" />
 
                 <EditText
                     android:id="@+id/edtWeight"
@@ -159,6 +160,7 @@
                     android:textSize="14sp" />
 
             </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -179,30 +181,62 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <CheckBox
                     android:id="@+id/cbFragile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginRight="150dp"
                     android:fontFamily="@font/nunito_normal"
                     android:text="Fragile" />
 
-                <TextView
+                <CheckBox
+                    android:id="@+id/cbAsuransi"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="7dp"
-                    android:fontFamily="@font/nunito_light"
-                    android:text="We charge additional cost for fragile item by make wood packaging for it."
-                    android:textSize="8sp" />
+                    android:fontFamily="@font/nunito_normal"
+                    android:text="Insurance" />
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginRight="300dp"
+                        android:fontFamily="@font/nunito_light"
+                        android:text="We charge additional cost for fragile item by make wood packaging for it."
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="125dp"
+                        android:fontFamily="@font/nunito_light"
+                        android:text="We charge additional cost for additional insurance."
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
+
 
         <TextView
             android:layout_width="wrap_content"
@@ -213,6 +247,33 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/deliveryType"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/PengambilanPaket"
+                android:inputType="textPassword"
+                android:scrollbarSize="5dp"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/nunito_light"
+                android:text=" Delivered To Post = Dikirim ke Pos Terdekat \n Pick up                 = Di ambil dari lokasi pengiriman"
+                android:textSize="7sp" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -229,34 +290,10 @@
                 android:maxHeight="150dp" />
 
 
-            <Spinner
-                android:id="@+id/SpinnerPickUp"
-                android:layout_width="150dp"
-                android:layout_height="40dp"
-
-                android:background="@drawable/round_corner"
-                android:backgroundTint="@color/abu"
-                android:entries="@array/PengambilanPaket"
-                android:inputType="textPassword"
-                android:scrollbarSize="5dp"
-
-                android:textAlignment="center"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="50dp"
-                android:layout_marginLeft="7dp"
-                android:layout_marginTop="0dp"
-                android:fontFamily="@font/nunito_light"
-                android:text=" Delivered To Post = Dikirim ke Pos Terdekat \n Pick up                   = Di ambil dari lokasi pengiriman"
-                android:textSize="7sp" />
-
         </LinearLayout>
 
 
     </LinearLayout>
-
 
     <LinearLayout
         android:id="@+id/button"
@@ -280,19 +317,19 @@
             android:textColor="@color/colorNegative"
             android:textSize="16sp" />
 
-<!--        <Button-->
-<!--            android:id="@+id/btnAddItem"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="45dp"-->
-<!--            android:layout_margin="5dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:background="@drawable/round_corner"-->
-<!--            android:backgroundTint="@android:color/white"-->
-<!--            android:fontFamily="@font/nunito_bold"-->
-<!--            android:text="+ More Item"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:textColor="#e6aa15"-->
-<!--            android:textSize="16sp" />-->
+        <!--        <Button-->
+        <!--            android:id="@+id/btnAddItem"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="45dp"-->
+        <!--            android:layout_margin="5dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/round_corner"-->
+        <!--            android:backgroundTint="@android:color/white"-->
+        <!--            android:fontFamily="@font/nunito_bold"-->
+        <!--            android:text="+ More Item"-->
+        <!--            android:textAllCaps="false"-->
+        <!--            android:textColor="#e6aa15"-->
+        <!--            android:textSize="16sp" />-->
 
         <Button
             android:id="@+id/btnDone"

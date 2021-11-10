@@ -1,35 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DesignSurface">
-    <option name="filePathToZoomLevelMap">
-      <map>
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/drawable/rounded_smallcorner.xml" value="0.18020833333333333" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/drawable/track_paket.xml" value="0.18020833333333333" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/drawable/user_profile.xml" value="0.15572916666666667" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_admin_login.xml" value="0.13489583333333333" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_admin_tracking_update.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_loader.xml" value="0.11639492753623189" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_main_menu.xml" value="0.11639492753623189" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_order_confirm_order.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_order_payment.xml" value="0.30221703617269546" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_order_process.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_order_proses_frame.xml" value="0.1" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_order_service.xml" value="0.13405797101449277" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_package_details.xml" value="0.47974068071312803" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_tracking.xml" value="0.1" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_user.xml" value="0.13722826086956522" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_user_settings.xml" value="0.13405797101449277" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_sign.xml" value="0.125" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_sign_in.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_sign_up.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/menu/item_menu.xml" value="0.1" />
-      </map>
-    </option>
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="false" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
-  </component>
-  <component name="ProjectType">
-    <option name="id" value="Android" />
   </component>
 </project>
