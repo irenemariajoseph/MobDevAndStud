@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 
 import com.google.android.material.badge.BadgeUtils;
@@ -24,12 +25,20 @@ import com.google.android.material.badge.BadgeUtils;
 public class MenuUserSettings extends AppCompatActivity {
         Button btnSave;
 >>>>>>> Stashed changes
+=======
+
+import com.google.android.material.badge.BadgeUtils;
+
+public class MenuUserSettings extends AppCompatActivity {
+        Button btnSave;
+>>>>>>> Stashed changes
 
 @Override
 protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_user_settings);
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
         btnBack = findViewById(R.id.btnBack);
@@ -40,6 +49,8 @@ protected void onCreate(Bundle savedInstanceState) {
 =======
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
         btnSave = findViewById(R.id.btnSave);
 
         btnSave.setOnClickListener(new View.OnClickListener() {
@@ -47,6 +58,9 @@ protected void onCreate(Bundle savedInstanceState) {
                 public void onClick(View view) {
                         startActivity(new Intent(MenuUserSettings.this, MainMenuActivity.class));
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

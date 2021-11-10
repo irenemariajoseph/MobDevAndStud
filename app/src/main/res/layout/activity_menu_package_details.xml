@@ -202,6 +202,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunito_normal"
                     android:text="Insurance" />
+<<<<<<< Updated upstream
 
             </LinearLayout>
 
@@ -235,6 +236,41 @@
 
             </LinearLayout>
 
+=======
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginRight="300dp"
+                        android:fontFamily="@font/nunito_light"
+                        android:text="We charge additional cost for fragile item by make wood packaging for it."
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="125dp"
+                        android:fontFamily="@font/nunito_light"
+                        android:text="We charge additional cost for additional insurance."
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+>>>>>>> Stashed changes
         </LinearLayout>
 
 
@@ -247,6 +283,7 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
             <LinearLayout
@@ -281,12 +318,15 @@
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:orientation="horizontal">
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
             <ImageView
@@ -298,6 +338,8 @@
                 android:maxHeight="150dp" />
 
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
             <Spinner
@@ -337,6 +379,7 @@
                 android:maxWidth="150dp"
                 android:maxHeight="150dp" />
 
+<<<<<<< Updated upstream
 
         </LinearLayout>
 
@@ -365,6 +408,12 @@
 >>>>>>> Stashed changes
 =======
 
+=======
+
+        </LinearLayout>
+
+
+>>>>>>> Stashed changes
     </LinearLayout>
 
 >>>>>>> Stashed changes

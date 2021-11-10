@@ -20,6 +20,7 @@
         android:theme="@style/AppTheme">
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <activity android:name=".MenuOrderPaymentDone"></activity>
         <activity android:name=".MenuLogout" />
         <activity android:name=".Logout" />
@@ -41,6 +42,9 @@
         <activity
             android:name=".MenuPickUpLocation"
             android:label="@string/title_activity_menu_pick_up_location" />
+=======
+        <activity android:name=".MenuFormAddress"></activity>
+>>>>>>> Stashed changes
 =======
         <activity android:name=".MenuFormAddress"></activity>
 >>>>>>> Stashed changes

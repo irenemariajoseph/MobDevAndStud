@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import android.os.Bundle;
 
 public class MenuFormAddress extends AppCompatActivity {
 
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 import android.content.Intent;
@@ -21,6 +24,9 @@ public class MenuFormAddress extends AppCompatActivity {
     Button btnBack;
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -30,7 +36,10 @@ public class MenuFormAddress extends AppCompatActivity {
         setContentView(R.layout.activity_menu_form_address);
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -42,6 +51,9 @@ public class MenuFormAddress extends AppCompatActivity {
             }
         });
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
