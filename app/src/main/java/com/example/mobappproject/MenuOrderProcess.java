@@ -20,8 +20,12 @@ public class MenuOrderProcess extends AppCompatActivity implements AdapterView.O
 <<<<<<< Updated upstream
  Button btnBack;
 
+<<<<<<< Updated upstream
 =======
 
+Button btnBack;
+>>>>>>> Stashed changes
+=======
 Button btnBack;
 >>>>>>> Stashed changes
 
