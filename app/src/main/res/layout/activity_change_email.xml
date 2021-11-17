@@ -4,6 +4,77 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg3"
     tools:context=".ChangeEmail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Email Lama:"
+            android:textAlignment="center"
+            android:textColor="@color/biru"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/txbemailbaru"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_smallcorner"
+            android:ems="10"
+            android:hint="Type your Old Email"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Email Baru :"
+            android:textAlignment="center"
+            android:textColor="@color/biru"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/txbpassword"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rounded_smallcorner"
+            android:ems="10"
+            android:hint="Type your Nrw Email"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnconfirm"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/round_background_dark"
+            android:text="Change Email"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
