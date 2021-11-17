@@ -34,7 +34,6 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/round_corner"
             android:hint="Nama Lengkap"
-            android:inputType="textPassword"
             android:padding="10dp"
             android:textSize="15sp" />
 
@@ -46,6 +45,7 @@
             android:layout_marginTop="10dp"
             android:background="@drawable/round_corner"
             android:hint="Email"
+            android:inputType="textEmailAddress"
             android:padding="10dp"
             android:textSize="15sp" />
 

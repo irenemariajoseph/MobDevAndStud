@@ -16,13 +16,21 @@
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_order_proses_frame.xml" value="0.1" />
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_order_service.xml" value="0.13405797101449277" />
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_package_details.xml" value="0.47974068071312803" />
+<<<<<<< Updated upstream
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_tracking.xml" value="0.1" />
+=======
+        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_tracking.xml" value="0.4466666666666667" />
+>>>>>>> Stashed changes
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_user.xml" value="0.13722826086956522" />
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_menu_user_settings.xml" value="0.13405797101449277" />
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_sign.xml" value="0.125" />
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_sign_in.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/layout/activity_sign_up.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/menu/item_menu.xml" value="0.1" />
+<<<<<<< Updated upstream
+=======
+        <entry key="..\:/Users/Irene Maria/OneDrive/Documents/GitHub/MobDevAndStud/app/src/main/res/xml/network_security_config.xml" value="0.13489583333333333" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>

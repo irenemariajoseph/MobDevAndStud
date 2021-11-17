@@ -25,6 +25,26 @@ public class MenuOrderProcess extends AppCompatActivity implements AdapterView.O
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_menu_order_process);
 
+            Button btnForm =(Button)findViewById(R.id.button4);
+            btnForm.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(getApplicationContext(),FormAddress.class);
+                    startActivity(i);
+                }
+            });
+
+            Button btnFormPen =(Button)findViewById(R.id.button5);
+            btnFormPen.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent i = new Intent(getApplicationContext(),FormAddressPenerima.class);
+                    startActivity(i);
+                }
+            });
+
+
+
 
 
             Button btnPackageDetails =(Button)findViewById(R.id.btnPackageDetails);

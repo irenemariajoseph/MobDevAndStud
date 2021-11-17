@@ -2,11 +2,7 @@
 <resources>
     <string-array name="com_google_android_gms_fonts_certs" />
 
-    <string-array name="PengambilanPaket">
-        <item>Tipe ↕</item>
-        <item>Delivered to Post</item>
-        <item>Pick Up</item>
-    </string-array>
+
 
     <string-array name="UpdateTracking" >
     <item>Not Yet Process ↕</item>

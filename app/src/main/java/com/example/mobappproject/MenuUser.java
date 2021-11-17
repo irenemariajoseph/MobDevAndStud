@@ -16,7 +16,7 @@ import android.widget.Button;
 
 public class MenuUser extends Fragment {
 
-    private Button  btnAdmin, btnlogout;
+    private Button  btnAdmin, btnlogout, btnAboutComp;
 
 
     @Nullable
@@ -54,6 +54,16 @@ public class MenuUser extends Fragment {
                     }
                 });
 
+
+        //button admin
+        btnAboutComp = v.findViewById(R.id.btnAboutComp);
+        btnAboutComp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), aboutcompany.class));
+
+            }
+        });
         return v;
     }}
 

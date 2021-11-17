@@ -11,4 +11,6 @@
     <color name="biru">#003f7f</color>
     <color name="abu">#d2d2d2</color>
     <color name="colorNegative">#DE4949</color>
+    <color name="HintWajib">#FFFA8888</color>
+
 </resources>

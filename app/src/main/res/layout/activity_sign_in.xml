@@ -24,7 +24,7 @@
         android:id="@+id/Lin1" >
 
         <EditText
-            android:id="@+id/editEmail"
+            android:id="@+id/Login_Email"
             android:layout_width="250dp"
             android:layout_height="40dp"
             android:layout_marginLeft="45dp"
@@ -36,7 +36,7 @@
             android:textSize="15sp" />
 
         <EditText
-            android:id="@+id/editPass"
+            android:id="@+id/Login_Pass"
             android:layout_width="250dp"
             android:layout_height="40dp"
             android:layout_marginLeft="45dp"
