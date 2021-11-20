@@ -8,10 +8,12 @@
     <item>Not Yet Process ↕</item>
     <item>Pick Up</item>
     <item>Delivered to Post</item>
-    <item>Warehouse Transit </item>
-    <item>Accepted By Courier </item>
-    <item>On Going Delivery </item>
-    <item>Package Arrived </item>
+    <item>Warehouse Transit</item>
+    <item>Accepted By Courier</item>
+    <item>On Going Delivery</item>
+    <item>Package Arrived</item>
+    <item>Failed to Delivered</item>
+
     </string-array>
 
 </resources>

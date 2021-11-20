@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+
+                app:srcCompat="@drawable/pemesanan_paket" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/list_content1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:paddingTop="1dip"
+                        android:paddingBottom="1dip"
+                        android:text="ID Transaction     :"
+                        android:textColor="@color/biru"
+                        android:textSize="12dip"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/list_content8"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:paddingTop="1dip"
+                        android:paddingBottom="1dip"
+                        android:text="sample"
+                        android:textAlignment="textStart"
+
+                        android:textSize="10dip"
+                        android:textColor="@color/item"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/list_content3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:paddingTop="1dip"
+                        android:paddingBottom="1dip"
+                        android:text="Sender Address   :"
+                        android:textColor="@color/biru"
+                        android:textSize="12dip" />
+
+                    <TextView
+                        android:id="@+id/list_content9"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:maxLines="4"
+                        android:paddingTop="1dip"
+                        android:paddingBottom="1dip"
+                        android:text="sample"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/item"
+                        android:textSize="10dip"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/list_content5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:paddingTop="1dip"
+                        android:paddingBottom="1dip"
+                        android:text="Receiver Address :"
+                        android:textColor="@color/biru"
+                        android:textSize="12dip" />
+
+                    <TextView
+                        android:id="@+id/list_content10"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="19dp"
+                        android:clickable="false"
+                        android:longClickable="false"
+                        android:paddingTop="1dip"
+                        android:paddingBottom="1dip"
+                        android:text="sample"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/item"
+                        android:textSize="10dip"
+
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

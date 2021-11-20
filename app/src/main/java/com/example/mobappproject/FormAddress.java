@@ -2,7 +2,7 @@ package com.example.mobappproject;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
+import android.view.textservice.SpellCheckerSession;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -29,7 +29,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FormAddress extends AppCompatActivity {
-
+    public static String id_pengirimDB;
+    private static final String TAG_ID = "data";
 
     private String txtnamaPengirim,txtnoTelpPengirim,txtalamatLengkapPengirim,txtkotaPeng, txtkodePosPeng,txtNotesPeng;
     private String txtSpinProvinsi;
@@ -41,8 +42,7 @@ public class FormAddress extends AppCompatActivity {
     private EditText namaPengirim,noTelpPengirim,alamatLengkapPengirim,kotaPeng, kodePosPeng,NotesPeng;
     private Spinner spinProvinsi;
 
-    private String urlAddressPeng = "http://192.168.1.78/mobappbackend/router/inputalamatpen.php";
-
+    private String urlAddressPeng = "http://192.168.1.78/mobappbackend/router/inputalamatpeng.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,6 +94,13 @@ public class FormAddress extends AppCompatActivity {
                                     int sukses = jObj.getInt("code");
                                     if (sukses == 200) {
                                         Toast.makeText(FormAddress.this.getApplicationContext(), "Data alamat pengirim berhasil ditambahkan", Toast.LENGTH_SHORT).show();
+
+//                                        data = jObj.getJSONObject("data");
+                                        id_pengirimDB = jObj.getString("data");
+                                        Intent i = new Intent(getApplicationContext(),FormAddressPenerima.class);
+                                        startActivity(i);
+                                        finish();
+
 //                                        MyCarPage fragmycar = new MyCarPage();
 //                                        fragmycar.setArguments(getActivity().getIntent().getExtras());
 //                                        Bundle bundle = new Bundle();
@@ -102,6 +109,7 @@ public class FormAddress extends AppCompatActivity {
 //                                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frag_container,fragmycar).commit();
                                     } else {
                                         Toast.makeText(FormAddress.this.getApplicationContext(), "Data alamat pengirim gagal ditambahkan", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(FormAddress.this.getApplicationContext(), "Periksa pengisian data sesuai keterangan", Toast.LENGTH_LONG).show();
                                     }
                                 }
                                 catch (Exception ex) {
@@ -139,10 +147,21 @@ public class FormAddress extends AppCompatActivity {
                         };
                         queue.getCache().clear();
                         queue.add(stringRequest);
+
+
+
+
                     }
+                            //pembatas
 
 
-                });
+
+                }
+
+
+
+
+                );
 
                 ad.setNegativeButton("NO", new DialogInterface.OnClickListener() {
                     @Override

@@ -68,6 +68,40 @@
                     android:textSize="18sp"
                     android:textStyle="bold"/>
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_light"
+                        android:gravity="top"
+                        android:text="Sender Name :" />
+
+                    <TextView
+                        android:id="@+id/txtnamapengirim"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:fontFamily="@font/nunito_light"
+                        android:maxLines="4"
+
+                        android:gravity="end"
+                        android:text="This is the pickup address" />
+
+                </LinearLayout>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -88,16 +122,16 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/nunito_light"
                         android:gravity="top"
-                        android:text="Destination:" />
+                        android:text="Sender Location :" />
 
                     <TextView
-                        android:id="@+id/txtDestAddress"
+                        android:id="@+id/txtpengirimAddress"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="2"
                         android:fontFamily="@font/nunito_light"
+                        android:gravity="end"
                         android:maxLines="4"
-                        android:minLines="1"
                         android:text="This is the destination address" />
 
                 </LinearLayout>
@@ -112,27 +146,27 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="10dp"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView7"
+                        android:id="@+id/textView111"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:fontFamily="@font/nunito_light"
                         android:gravity="top"
-                        android:text="Pickup Location:" />
+                        android:text="Receiver" />
 
                     <TextView
-                        android:id="@+id/txtPickupAddress"
+                        android:id="@+id/txtnamapenerima"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="2"
                         android:fontFamily="@font/nunito_light"
                         android:maxLines="4"
-                        android:minLines="1"
-                        android:text="This is the pickup address" />
+                        android:gravity="end"
+                        android:text="This is the destination address" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -156,20 +190,22 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/nunito_light"
                         android:gravity="top"
-                        android:text="Pickup Date:" />
+                        android:text="Destination :" />
 
                     <TextView
-                        android:id="@+id/txtPickupDate"
+                        android:id="@+id/txtalamatpenerima"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:fontFamily="@font/nunito_light"
+                        android:gravity="end"
                         android:maxLines="4"
-                        android:minLines="1"
                         android:text="This is the pickup date" />
 
                 </LinearLayout>
             </LinearLayout>
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -186,7 +222,7 @@
                     android:text="Item Name :" />
 
                 <TextView
-                    android:id="@+id/txtDeliveryPrices"
+                    android:id="@+id/txtbarang"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
@@ -211,16 +247,16 @@
 
                     <TextView
                         android:id="@+id/itemweight"
-                        android:layout_width="0dp"
+                        android:layout_width="80dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:fontFamily="@font/nunito_light"
                         android:gravity="top"
-                        android:text="Item Weight:" />
+                        android:text="Item Weight: " />
 
                     <TextView
                         android:id="@+id/txtItemWeight"
-                        android:layout_width="0dp"
+                        android:layout_width="246dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:fontFamily="@font/nunito_light"
@@ -230,6 +266,7 @@
                         android:text=" xxx Kg" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -237,28 +274,29 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/txtJarak"
-                        android:layout_width="0dp"
+                        android:id="@+id/itemasuransi"
+                        android:layout_width="67dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:fontFamily="@font/nunito_light"
                         android:gravity="top"
-                        android:text="Distance:" />
+                        android:text="Distance :" />
 
                     <TextView
-                        android:id="@+id/txtDistance"
-                        android:layout_width="0dp"
+                        android:id="@+id/txtjarakganti"
+                        android:layout_width="246dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="2"
                         android:fontFamily="@font/nunito_light"
                         android:gravity="end"
-                        android:maxLines="4"
-                        android:minLines="1"
-                        android:text="xxx Km" />
-
-
+                        android:text=" xxx Kg" />
 
                 </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"/>
             </LinearLayout>
 
             <LinearLayout

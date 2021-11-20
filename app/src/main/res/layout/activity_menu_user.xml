@@ -27,10 +27,23 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="105dp"
                 android:layout_gravity="center_vertical"
                 android:layout_marginTop="15dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtxHalo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="122dp"
+                    android:layout_marginBottom="75dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:text="Halo, "
+                    android:textAlignment="center"
+                    android:textColor="@color/biru"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txtName"
@@ -38,8 +51,9 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/nunito_bold"
                     android:text="Name"
+                    android:textStyle="bold"
                     android:layout_marginBottom="75dp"
-                    android:textAlignment="center"
+                    android:textAlignment="textStart"
                     android:textColor="@color/biru"
                     android:textSize="25dp" />
 
@@ -89,21 +103,21 @@
             android:textSize="15dp" />
 
 
-        <Button
-            android:id="@+id/btnAdmin"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="230dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/nunito_normal"
-            android:text="Admin"
-            android:background="@null"
-            android:textAlignment="center"
-            android:textColor="@color/biru"
-            android:textAllCaps="false"
-            android:textStyle="italic"
-            android:textSize="10dp" />
+<!--        <Button-->
+<!--            android:id="@+id/btnAdmin"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginLeft="230dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:fontFamily="@font/nunito_normal"-->
+<!--            android:text="Admin"-->
+<!--            android:background="@null"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/biru"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textStyle="italic"-->
+<!--            android:textSize="10dp" />-->
 
 
 

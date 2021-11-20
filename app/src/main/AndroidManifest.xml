@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.mobappproject">
+    package="com.example.mobappproject" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -14,7 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true" >
+        <activity
+            android:name=".TransactionDetails"
+            android:exported="true" />
         <activity
             android:name=".ChangePassword"
             android:exported="true" />
@@ -52,7 +55,7 @@
         <activity android:name=".SignInActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MainMenuActivity" />
-        <activity android:name=".Loader">
+        <activity android:name=".Loader" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

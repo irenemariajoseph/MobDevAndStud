@@ -25,6 +25,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SignInActivity extends AppCompatActivity {
+    public static String userName;
+    public static String userID;
+
 
     private EditText Login_Pass,Login_Email;
     private String email,password;
@@ -42,13 +45,12 @@ public class SignInActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
 
-        btnSignInMenu = findViewById(R.id.btnSignInMenu);
-
-
-
-        Button btnlogin = (Button)findViewById(R.id.btnSignInMenu);
         Login_Email = (EditText) findViewById(R.id.Login_Email);
         Login_Pass = (EditText) findViewById(R.id.Login_Pass);
+
+        btnSignInMenu = findViewById(R.id.btnSignInMenu);
+        Button btnlogin = (Button)findViewById(R.id.btnSignInMenu);
+
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,17 +71,21 @@ public class SignInActivity extends AppCompatActivity {
 
                                 data = jObj.getJSONObject("data");
                                 String userRole = data.getString("role");
+                                userName = data.getString("name");
+                                userID = data.getString("id");
+
 
                                 if(userRole.equals("user")){
                                     Intent i = new Intent(getApplicationContext(),MainMenuActivity.class);
-//                                    i.putExtra("email",Uname);
+                                    i.putExtra("userName" , userName);
+
                                     startActivity(i);
                                     finish();
                                 }
 
                                 if(userRole.equals("kurir")){
                                     Intent i = new Intent(getApplicationContext(),AdminTrackingUpdate.class);
-//                                    i.putExtra("username",Uname);
+//                                    i.putExtra("email",Uname);
                                     startActivity(i);
                                     finish();
                                 }
@@ -103,6 +109,7 @@ public class SignInActivity extends AppCompatActivity {
                         Map<String, String> params = new HashMap<>();
                         params.put("email", email);
                         params.put("password", password);
+
                         return params;
                     }
 

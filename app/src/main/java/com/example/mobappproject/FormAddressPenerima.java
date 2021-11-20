@@ -29,6 +29,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class FormAddressPenerima extends AppCompatActivity {
+    public static String id_penerimaDB;
+    private static final String TAG_ID = "data";
+
 
     private String txtnamaPen,txtnoTelpPen,txtalamatLengkapPen,txtkotaPen, txtkodePosPen,txtNotesPen;
     private String txtSpinProvinsi;
@@ -40,7 +43,9 @@ public class FormAddressPenerima extends AppCompatActivity {
     private EditText namaPenerima,noTelpPenerima,alamatLengkapPenerima,kotaPenerima, kodePosPenerima,NotesPen;
     private Spinner spinProvPen;
 
-        private String urlPackageDetails = "http://192.168.1.78/mobappbackend/router/inputalamatpen.php";
+    private String urlPackageDetails = "http://192.168.1.78/mobappbackend/router/inputalamatpen.php";
+
+//    private JSONObject data;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -77,7 +82,7 @@ public class FormAddressPenerima extends AppCompatActivity {
 
                     //Toast.makeText(getActivity().getApplicationContext(),noplat + carmodel + caryear + carcolor + norangka + nomesin ,Toast.LENGTH_LONG).show();
                     AlertDialog.Builder ad = new AlertDialog.Builder(FormAddressPenerima.this);
-                    ad.setTitle("Konfirmasi Package Details");
+                    ad.setTitle("Konfirmasi Alamat Penerima");
                     ad.setMessage("Apakah data yang anda sudah isi benar?");
 
 
@@ -94,6 +99,14 @@ public class FormAddressPenerima extends AppCompatActivity {
                                         int sukses = jObj.getInt("code");
                                         if (sukses == 200) {
                                             Toast.makeText(FormAddressPenerima.this.getApplicationContext(), "Data alamat penerima berhasil ditambahkan", Toast.LENGTH_SHORT).show();
+//                                            data = jObj.getJSONObject("data"); ga pake ini karena jobj udah ada data yg diperlukan
+
+                                            id_penerimaDB = jObj.getString("data");
+                                            Intent i = new Intent(getApplicationContext(),MenuPackageDetails.class);
+                                            startActivity(i);
+                                            finish();
+
+
 //                                        MyCarPage fragmycar = new MyCarPage();
 //                                        fragmycar.setArguments(getActivity().getIntent().getExtras());
 //                                        Bundle bundle = new Bundle();
@@ -101,7 +114,7 @@ public class FormAddressPenerima extends AppCompatActivity {
 //                                        fragmycar.setArguments(bundle);
 //                                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frag_container,fragmycar).commit();
                                         } else {
-                                            Toast.makeText(FormAddressPenerima.this.getApplicationContext(), "Data alamat pengirim gagal ditambahkan", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(FormAddressPenerima.this.getApplicationContext(), "Data alamat penerima gagal ditambahkan", Toast.LENGTH_SHORT).show();
                                             Toast.makeText(FormAddressPenerima.this.getApplicationContext(), "Periksa pengisian data sesuai keterangan", Toast.LENGTH_LONG).show();
                                         }
                                     }

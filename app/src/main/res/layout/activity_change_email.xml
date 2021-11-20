@@ -21,20 +21,20 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Email Lama:"
+            android:text="Current Email :"
             android:textAlignment="center"
             android:textColor="@color/biru"
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/txbemailbaru"
-            android:layout_width="350dp"
+            android:id="@+id/txbemailganti"
+            android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/rounded_smallcorner"
             android:ems="10"
-            android:hint="Type your Old Email"
+            android:hint="Type your Current Email"
             android:inputType="textEmailAddress"
             android:textAlignment="center"
             android:textColor="#000000"
@@ -46,27 +46,27 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/poppins_bold"
-            android:text="Email Baru :"
+            android:text="New Email :"
             android:textAlignment="center"
             android:textColor="@color/biru"
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/txbpassword"
-            android:layout_width="350dp"
+            android:id="@+id/txtemailbaru"
+            android:layout_width="300dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="16dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/rounded_smallcorner"
             android:ems="10"
-            android:hint="Type your Nrw Email"
-            android:inputType="textPassword"
+            android:hint="Type your New Email"
+
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20sp" />
 
         <Button
-            android:id="@+id/btnconfirm"
+            android:id="@+id/btngantiemail"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
