@@ -59,4 +59,6 @@
         <item>Delivered to Post</item>
         <item>Pick Up</item>
     </string-array>
+    <string name="title_activity_apigoogle_maps">APIGoogleMaps</string>
+    <string name="title_activity_apigoogle_maps2">APIGoogleMaps2</string>
 </resources>

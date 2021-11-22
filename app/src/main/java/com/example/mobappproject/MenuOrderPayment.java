@@ -24,7 +24,7 @@ public class MenuOrderPayment extends AppCompatActivity {
         btnTransactionDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(),MenuOrderPayment.class);
+                Intent i = new Intent(getApplicationContext(),MainMenuActivity.class);
                 startActivity(i);
             }
         });

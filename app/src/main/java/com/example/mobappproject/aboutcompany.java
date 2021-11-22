@@ -27,14 +27,36 @@ public class aboutcompany extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+//        btndirection = (Button)aboutcompany.this.findViewById(R.id.btndirection);
+//        btndirection.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String uri = "http://maps.google.co.in/maps?q=" + "Expedia";
+//                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+//                startActivity(i);
+//            }
+//        });
+
         btndirection = (Button)aboutcompany.this.findViewById(R.id.btndirection);
         btndirection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uri = "http://maps.google.co.in/maps?q=" + "Expedia";
-                Intent i = new Intent(Intent.ACTION_VIEW, Uri.parse(uri));
+//                String uri = "http://maps.google.co.in/maps?q=" + "Expedia";
+                Intent i = new Intent(aboutcompany.this, APIGoogleMaps.class);
                 startActivity(i);
             }
         });
+
+        btndirection = (Button)aboutcompany.this.findViewById(R.id.btndirection);
+        btndirection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                String uri = "http://maps.google.co.in/maps?q=" + "Expedia";
+                Intent i = new Intent(aboutcompany.this, APIGoogleMaps.class);
+                startActivity(i);
+            }
+        });
+
+
     }
 }

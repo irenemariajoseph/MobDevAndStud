@@ -90,7 +90,7 @@ public class MenuOrderProcess extends AppCompatActivity implements AdapterView.O
                         @Override
                         public void onErrorResponse(VolleyError error) {
                             Log.e("Error", error.getMessage());
-                            Toast.makeText(MenuOrderProcess.this, "silahkan cek koneksi internet anda", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MenuOrderProcess.this, "Data harus di isi berurutan, Isi detail data mulai dari tombol proses 1", Toast.LENGTH_SHORT).show();
                         } }) {
                         @Override
                         protected Map<String, String> getParams() {
@@ -124,27 +124,25 @@ public class MenuOrderProcess extends AppCompatActivity implements AdapterView.O
                 }
             });
 //
-//            Button btnFormPen =(Button)findViewById(R.id.button5);
-//            btnFormPen.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Intent i = new Intent(getApplicationContext(),FormAddressPenerima.class);
-//                    startActivity(i);
-//                }
-//            });
+            Button btnFormPen =(Button)findViewById(R.id.button5);
+            btnFormPen.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(MenuOrderProcess.this, "Data harus di isi berurutan, Isi detail data mulai dari tombol proses 1", Toast.LENGTH_LONG).show();
+                }
+            });
+
 //
 //
 //
 //
-//
-//            Button btnPackageDetails =(Button)findViewById(R.id.btnPackageDetails);
-//            btnPackageDetails.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Intent i = new Intent(getApplicationContext(),MenuPackageDetails.class);
-//                    startActivity(i);
-//                }
-//            });
+            Button btnPackageDetails =(Button)findViewById(R.id.btnPackageDetails);
+            btnPackageDetails.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(MenuOrderProcess.this, "Data harus di isi berurutan, Isi detail data mulai dari tombol proses 1", Toast.LENGTH_LONG).show();
+                }
+            });
 
 //            Button buatconfirm =(Button)findViewById(R.id.buatconfirm);
 //            buatconfirm.setOnClickListener(new View.OnClickListener() {

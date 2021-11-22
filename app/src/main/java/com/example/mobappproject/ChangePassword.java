@@ -61,7 +61,7 @@ public class ChangePassword extends AppCompatActivity {
 
 
                             } else {
-                                Toast.makeText(ChangePassword.this, "Email dan Password yang anda masukkan salah", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ChangePassword.this, "Password gagal terganti, periksa pengisian data", Toast.LENGTH_SHORT).show();
                             }
                         }
                         catch (Exception ex) {

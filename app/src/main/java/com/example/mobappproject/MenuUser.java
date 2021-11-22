@@ -54,14 +54,14 @@ public class MenuUser extends Fragment {
 
 
         //button admin
-        btnAdmin = v.findViewById(R.id.btnAdmin);
-        btnAdmin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getActivity(), AdminLogin.class));
-
-                    }
-                });
+//        btnAdmin = v.findViewById(R.id.btnAdmin);
+//        btnAdmin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(getActivity(), AdminLogin.class));
+//
+//                    }
+//                });
 
 
         //button admin

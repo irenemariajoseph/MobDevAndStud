@@ -161,6 +161,8 @@ public class MenuPackageDetails extends AppCompatActivity {
 //                                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frag_container,fragmycar).commit();
                                     } else {
                                         Toast.makeText(MenuPackageDetails.this.getApplicationContext(), "Data package details gagal ditambahkan", Toast.LENGTH_SHORT).show();
+                                        Toast.makeText(MenuPackageDetails.this.getApplicationContext(), "Periksa pengisian data sesuai keterangan", Toast.LENGTH_LONG).show();
+
                                     }
                                 }
                                 catch (Exception ex) {

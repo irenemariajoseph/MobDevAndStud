@@ -78,7 +78,7 @@ public class SignUpActivity extends AppCompatActivity {
                                                                         startActivity(i);
                                                                         finish();
                                                                 } else {
-                                                                        Toast.makeText(SignUpActivity.this, "Register data gagal periksa informasi pribadi anda", Toast.LENGTH_SHORT).show();
+                                                                        Toast.makeText(SignUpActivity.this, "Register data gagal periksa informasi  tertera", Toast.LENGTH_SHORT).show();
                                                                 }
                                                         } catch (Exception ex) {
                                                                 Log.e("Error", ex.toString());

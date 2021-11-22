@@ -150,7 +150,7 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:background="@drawable/round_background_dark"
-                    android:text="Direction"
+                    android:text="Direction Maps"
                     android:textSize="12dp"
                     android:textAllCaps="false"
                     android:layout_marginRight="5dp"

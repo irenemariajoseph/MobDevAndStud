@@ -62,12 +62,12 @@ public class ChangeEmail extends AppCompatActivity {
                                 JSONObject jObj = new JSONObject(response);
                                 int sukses = jObj.getInt("code");
                                 if (sukses == 200) {
-                                    Toast.makeText(ChangeEmail.this, "Register data berhasil! Silahkan Sign In", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ChangeEmail.this, "Email sukses terganti", Toast.LENGTH_SHORT).show();
                                     Intent i = new Intent(getApplicationContext(),MenuUserSettings.class);
                                     startActivity(i);
                                     finish();
                                 } else {
-                                    Toast.makeText(ChangeEmail.this, "Register data gagal periksa informasi pribadi anda", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(ChangeEmail.this, "Email gagal terganti, periksa pengisian data", Toast.LENGTH_SHORT).show();
                                 }
                             } catch (Exception ex) {
                                 Log.e("Error", ex.toString());

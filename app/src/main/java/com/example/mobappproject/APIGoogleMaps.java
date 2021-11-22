@@ -3,6 +3,8 @@ package com.example.mobappproject;
 import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -13,6 +15,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.example.mobappproject.databinding.ActivityApigoogleMapsBinding;
 
 public class APIGoogleMaps extends FragmentActivity implements OnMapReadyCallback {
+    Button btndirection2;
 
     private GoogleMap mMap;
     private ActivityApigoogleMapsBinding binding;
@@ -42,10 +45,33 @@ public class APIGoogleMaps extends FragmentActivity implements OnMapReadyCallbac
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        btndirection2=(Button) findViewById(R.id.btndirection2);
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
+        // map = googleMap;
+        //        home = new LatLng(-6.257385, 106.618320);
+        //        map.addMarker(new MarkerOptions().position(home).title("welcome my umn")).showInfoWindow();
+        //        map.moveCamera(CameraUpdateFactory.newLatLng(home));
+//                map.moveCamera(CameraUpdateFactory.newLatLngZoom(home, 16));
+//                map.setTrafficEnabled(true);
+
+        LatLng sydney = new LatLng(-6.215303, 106.8198675);
+
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Expedia Company"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 16));
+        mMap.setTrafficEnabled(true);
+
+
+        btndirection2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+                mMap.addMarker(new MarkerOptions().position(sydney).title("Expedia Company"));
+                mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 16));
+                mMap.setTrafficEnabled(true);
+            }
+        });
     }
 }

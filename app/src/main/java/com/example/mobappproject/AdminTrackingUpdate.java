@@ -162,7 +162,7 @@ public class AdminTrackingUpdate extends AppCompatActivity {
 //                                        fragmycar.setArguments(bundle);
 //                                        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.frag_container,fragmycar).commit();
                                             } else {
-                                                Toast.makeText(AdminTrackingUpdate.this.getApplicationContext(), "Data status gagal ditambahkan", Toast.LENGTH_SHORT).show();
+                                                Toast.makeText(AdminTrackingUpdate.this.getApplicationContext(), "Data status gagal terupdate", Toast.LENGTH_SHORT).show();
                                                 Toast.makeText(AdminTrackingUpdate.this.getApplicationContext(), "Periksa pengisian data sesuai keterangan", Toast.LENGTH_LONG).show();
                                             }
                                         }
@@ -227,6 +227,15 @@ public class AdminTrackingUpdate extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),Sign.class);
+                startActivity(i);
+            }
+        });
+
+        Button btnNotes =(Button)findViewById(R.id.button2);
+        btnNotes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),NotesDriver.class);
                 startActivity(i);
             }
         });

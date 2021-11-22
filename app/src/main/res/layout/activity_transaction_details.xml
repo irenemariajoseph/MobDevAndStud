@@ -564,9 +564,10 @@
             android:layout_weight="1"
             android:fontFamily="@font/poppins_bold"
             android:gravity="top"
+            android:textStyle="bold"
             android:textColor="@color/biru"
             android:text="Live Status "
-            android:textSize="12dp" />
+            android:textSize="15dp" />
 
         <TextView
             android:id="@+id/statusDB"
