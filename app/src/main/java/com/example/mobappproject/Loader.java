@@ -12,7 +12,7 @@ public class Loader extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loader);
 
-        final int loading_time = 2000;
+        final int loading_time = 3000;
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

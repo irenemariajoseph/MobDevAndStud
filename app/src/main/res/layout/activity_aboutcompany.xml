@@ -25,7 +25,7 @@
             android:id="@+id/imgbengkel"
 
             android:layout_width="350dp"
-            android:layout_height="280dp"
+            android:layout_height="200dp"
             android:src="@drawable/aboutcompany"/>
 
         <TextView
@@ -38,7 +38,30 @@
             android:fontFamily="@font/poppins_bold"
             android:textColor="@color/biru"
             android:textSize="30sp" />
+        <LinearLayout
+            android:layout_weight="1.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
 
+            <Button
+                android:id="@+id/btnMenuViewer"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:background="@drawable/round_background_dark"
+                android:text="Know More"
+                android:textSize="12dp"
+                android:textAllCaps="false"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/putih" />
+
+
+        </LinearLayout>
     </LinearLayout>
 
     <!-- Biodata -->
@@ -168,6 +191,8 @@
                     android:textAllCaps="false"
                     android:textColor="@color/putih" />
             </LinearLayout>
+
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

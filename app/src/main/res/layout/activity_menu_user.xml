@@ -36,7 +36,7 @@
                     android:id="@+id/txtxHalo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="122dp"
+                    android:layout_marginLeft="118dp"
                     android:layout_marginBottom="75dp"
                     android:fontFamily="@font/nunito_bold"
                     android:text="Halo, "

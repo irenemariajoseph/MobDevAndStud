@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class aboutcompany extends AppCompatActivity {
-    private Button btncall,btndirection;
+    private Button btncall,btndirection, btnMenuViewer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +37,12 @@ public class aboutcompany extends AppCompatActivity {
 //            }
 //        });
 
-        btndirection = (Button)aboutcompany.this.findViewById(R.id.btndirection);
-        btndirection.setOnClickListener(new View.OnClickListener() {
+        btnMenuViewer = (Button)aboutcompany.this.findViewById(R.id.btnMenuViewer);
+        btnMenuViewer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                String uri = "http://maps.google.co.in/maps?q=" + "Expedia";
-                Intent i = new Intent(aboutcompany.this, APIGoogleMaps.class);
+                Intent i = new Intent(aboutcompany.this, ViewPager.class);
                 startActivity(i);
             }
         });

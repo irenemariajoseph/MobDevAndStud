@@ -700,7 +700,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/poppins_bold"
             android:gravity="top"
-            android:text="Accpeted by Kurir"
+            android:text="Accepted by Kurir"
             android:textColor="@color/biru"
             android:textSize="12dp" />
 
