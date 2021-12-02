@@ -28,7 +28,7 @@ public class ChangePassword extends AppCompatActivity {
     private EditText edtemail, edtpassword;
     private String email, password;
     Button btnkirimpass;
-    private String urlchangepass ="http://192.168.1.78/mobappbackend/router/changepassword.php";
+    private String urlchangepass ="http://192.168.1.9/mobappbackend/router/changepassword.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

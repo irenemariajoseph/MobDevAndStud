@@ -43,7 +43,7 @@ public class FormAddressPenerima extends AppCompatActivity {
     private EditText namaPenerima,noTelpPenerima,alamatLengkapPenerima,kotaPenerima, kodePosPenerima,NotesPen;
     private Spinner spinProvPen;
 
-    private String urlPackageDetails = "http://192.168.1.78/mobappbackend/router/inputalamatpen.php";
+    private String urlPackageDetails = "http://192.168.1.9/mobappbackend/router/inputalamatpen.php";
 
 //    private JSONObject data;
 

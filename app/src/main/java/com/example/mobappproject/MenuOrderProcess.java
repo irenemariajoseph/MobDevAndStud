@@ -38,7 +38,7 @@ public class MenuOrderProcess extends AppCompatActivity implements AdapterView.O
 //    txtid_transaksi
     private JSONObject data;
     
-    private String urlshowpackageinfo = "http://192.168.1.78/mobappbackend/router/showpackagedetails.php";
+    private String urlshowpackageinfo = "http://192.168.1.9/mobappbackend/router/showpackagedetails.php";
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);

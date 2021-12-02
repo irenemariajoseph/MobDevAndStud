@@ -35,7 +35,7 @@ import java.util.Map;
 public class AdminTrackingUpdate extends AppCompatActivity {
 
 
-    private String urlupdatekurir = "http://192.168.1.78/mobappbackend/router/updatestatus.php";
+    private String urlupdatekurir = "http://192.168.1.9/mobappbackend/router/updatestatus.php";
 
 
     private EditText id_updatestatus;
@@ -49,7 +49,7 @@ public class AdminTrackingUpdate extends AppCompatActivity {
 
     ListView lv;
     ArrayList<HashMap<String,String>> list_anggota;
-    String url_get_mahasiswa = "http://192.168.1.78/mobappbackend/router/showpackagelistkurir.php";
+    String url_get_mahasiswa = "http://192.168.1.9/mobappbackend/router/showpackagelistkurir.php";
 
     private static final String TAG_MAHASISWA="data";
     private static final String TAG_ID="id_transaksi";

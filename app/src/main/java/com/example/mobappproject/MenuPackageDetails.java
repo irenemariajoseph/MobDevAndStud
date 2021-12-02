@@ -54,7 +54,7 @@ public class MenuPackageDetails extends AppCompatActivity {
     private EditText edtNamaBarang,edtQuantity,edtWeight,edtJarak;
     private CheckBox cbAsuransi,cbFragile;
 
-    private String urlPackageDetails = "http://192.168.1.78/mobappbackend/router/inputpackagedetail.php";
+    private String urlPackageDetails = "http://192.168.1.9/mobappbackend/router/inputpackagedetail.php";
 
 
     @Override

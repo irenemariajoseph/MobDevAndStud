@@ -33,7 +33,7 @@ public class SignUpActivity extends AppCompatActivity {
         private String txtemail;
         private String txtpassword;
         private CheckBox checkbox;
-        private String urlregisterdata ="http://192.168.1.78/mobappbackend/router/registration.php";
+        private String urlregisterdata ="http://192.168.1.9/mobappbackend/router/registration.php";
 
         private static final String TAG_USER="data";
 

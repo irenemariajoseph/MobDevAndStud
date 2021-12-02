@@ -31,7 +31,7 @@ public class SignInActivity extends AppCompatActivity {
 
     private EditText Login_Pass,Login_Email;
     private String email,password;
-    private String urlcheckdata ="http://192.168.1.78/mobappbackend/router/login.php";
+    private String urlcheckdata ="http://192.168.1.9/mobappbackend/router/login.php";
 
     private static final String TAG_USER="data";
 

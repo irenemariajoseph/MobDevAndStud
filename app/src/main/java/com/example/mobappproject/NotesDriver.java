@@ -35,7 +35,6 @@ public class NotesDriver extends ListActivity implements AdapterView.OnItemLongC
         setContentView(R.layout.activity_notes_driver);
 
         dbHandler = new SQLite(this);
-
         try {
             dbHandler.open();
         } catch (SQLException e){
@@ -67,60 +66,5 @@ public class NotesDriver extends ListActivity implements AdapterView.OnItemLongC
         return false;
     }
 
-//    @Override
-//    public boolean onItemLongClick(AdapterView<?> adapterView, View view, int i, long l) {
-//        final Dialog dialog = new Dialog(this);
-//        dialog.setContentView(R.layout.dialog);
-//        dialog.setTitle("Pilih Aksi");
-//        dialog.show();
-//
-//        final Notes notes = (Notes) getListAdapter().getItem(i);
-//        final Long id = notes.getID();
-//        btnEdit = dialog.findViewById(R.id.btnEdit);
-//        btnEdit.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Notes notes = dbHandler.getNotes(id);
-//                Intent i = new Intent(getApplicationContext(),Edit.class);
-//                Bundle bundle = new Bundle();
-//                bundle.putLong("id", notes.getID());
-//                bundle.putString("judulnotes", notes.getJudulNotes());
-//                bundle.putString("kontennotes", notes.getKontenNotes());
-//                i.putExtras(bundle);
-//                startActivity(i);
-//                dialog.dismiss();
-//
-//            }
-//        });
-//        btnHapus = dialog.findViewById(R.id.btnHapus);
-//        btnHapus.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                AlertDialog.Builder konfirm = new AlertDialog.Builder(context);
-//                konfirm.setTitle("Hapus Notes");
-//                konfirm.setMessage("Anda yakin akan menghapus note ini?");
-//                konfirm.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialogInterface, int i) {
-//                        dbHandler.deleteNotes(id);
-//
-//                        finish();
-//                        startActivity(getIntent());
-//
-//                        Toast.makeText(MainActivity.this, "Barang berhasil dihapus",Toast.LENGTH_LONG).show();
-//                    }
-//                });
-//                konfirm.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialogInterface, int i) {
-//
-//                    }
-//                });
-//                konfirm.show();
-//                dialog.dismiss();
-//            }
-//        });
-//
-//        return true;
-//    }
+
 }

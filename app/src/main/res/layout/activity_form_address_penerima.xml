@@ -77,7 +77,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Masukkan Nama Penerima"
                     android:inputType="text"
-                    android:textSize="10sp" />
+                    android:textSize="17sp"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Masukkan Nomor Handphone Penerima"
                     android:inputType="number"
-                    android:textSize="10sp" />
+                    android:textSize="17sp"/>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Masukkan Alamat Lengkap Penerima"
-                    android:textSize="10sp"
+                    android:textSize="17sp"
                     android:layout_marginTop="8dp"
                     android:layout_weight="1"
                     android:ems="10"
@@ -151,7 +151,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Masukkan Kota Penerima"
-                    android:textSize="10sp" />
+                    android:textSize="17sp" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -168,7 +168,7 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:hint="Masukkan Kode Pos Penerima"
-                    android:textSize="10sp" />
+                    android:textSize="15sp" />
 
 
 
@@ -184,7 +184,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Masukkan Notes Tambahan"
-                    android:textSize="10sp" />
+                    android:textSize="17sp"/>
 
 
             </LinearLayout>

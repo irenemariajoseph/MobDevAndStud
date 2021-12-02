@@ -76,8 +76,8 @@ public class MenuTracking extends Fragment {
     private JSONObject data;
 
 //---------------------------------------------------------------------------------------------------
-    private String urllist_transaction = "http://192.168.1.78/mobappbackend/router/showpackagelistuser.php";
-    private String url_track_user = "http://192.168.1.78/mobappbackend/router/showpackagetracking.php";
+    private String urllist_transaction = "http://192.168.1.9/mobappbackend/router/showpackagelistuser.php";
+    private String url_track_user = "http://192.168.1.9/mobappbackend/router/showpackagetracking.php";
 
 
 
@@ -114,7 +114,6 @@ public class MenuTracking extends Fragment {
                 try {
                     JSONObject jObj = new JSONObject(response);
                     JSONArray member= jObj.getJSONArray(TAG_MAHASISWA);
-                    //Toast.makeText(SemuaMahasiswaActivity.this, "sesudah tag", Toast.LENGTH_SHORT).show();
 
                     for (int i=0; i< member.length();i++) {
                         JSONObject a=member.getJSONObject(i);
@@ -233,7 +232,7 @@ public class MenuTracking extends Fragment {
                                         txttanggal_arrived = data.getString("tanggal_arrived");
                                         txttanggal_failed = data.getString("tanggal_failed");
 
-                                        //gtau bener ato kagak
+
                                         Intent i = new Intent(getActivity(),TransactionDetails.class);
                                         startActivity(i);
 

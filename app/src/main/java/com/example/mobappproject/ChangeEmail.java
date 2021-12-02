@@ -32,7 +32,7 @@ public class ChangeEmail extends AppCompatActivity {
 
 
 
-    private String urlchangeemail ="http://192.168.1.78/mobappbackend/router/changeemail.php";
+    private String urlchangeemail ="http://192.168.1.9/mobappbackend/router/changeemail.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

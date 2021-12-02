@@ -42,7 +42,7 @@ public class FormAddress extends AppCompatActivity {
     private EditText namaPengirim,noTelpPengirim,alamatLengkapPengirim,kotaPeng, kodePosPeng,NotesPeng;
     private Spinner spinProvinsi;
 
-    private String urlAddressPeng = "http://192.168.1.78/mobappbackend/router/inputalamatpeng.php";
+    private String urlAddressPeng = "http://192.168.1.9/mobappbackend/router/inputalamatpeng.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
